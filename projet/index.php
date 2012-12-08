@@ -174,6 +174,84 @@
                 }
                 
                 break;
+                
+                case "AddNoteView":
+                    break;
+                
+                case "AddNote":
+                    break;
+                
+                case "AddNoteGroupeView":
+                    break;
+                
+                case "AddNoteGroupe":
+                    break;
+                
+                case "ConnexionView":
+                    break;
+                
+                case "Connexion":
+                    break;
+                
+                case "DeconnexionView":
+                    break;
+                
+                case "Deconnexion":
+                    break;
+                
+                case "ViewIndexEns":
+                    break;
+                
+                case "ViewIndexSco":
+                    break;
+                
+                case "ViewListeEnseinants":
+                    break;
+                
+                case "ViewListeGroupes":
+                    break;
+                
+                case "ViewListeModules":
+                    break;
+                
+                case "ModifyNote":
+                    break;
+                
+                case "ModifyGroupe":
+                    break;
+                
+                case "ModifyModule":
+                    break;
+                
+                case "ViewModule":
+                    break;
+                
+                case "ViewNotesEtudiant":
+                    break;
+                
+                case "DeleteGroupeView":
+                    break;
+                
+                case "DeleteGroupe":
+                    break;
+                
+                case "DeleteModuleView":
+                    break;
+                
+                case "DeleteModule":
+                    break;
+                
+                case "DeleteEtudiantView":
+                    break;
+                
+                case "DeleteEtudiant":
+                    break;
+                
+                case "DeleteNoteView":
+                    break;
+                
+                case "DeleteNote":
+                    break;
             
             default :
                 include("vues/utilisateur/accueil.php");
