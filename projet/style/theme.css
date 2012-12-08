@@ -1,0 +1,21 @@
+/* 
+    Document   : theme
+    Created on : 8 déc. 2012, 20:14:53
+    Author     : S
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+fieldset
+{
+    background-color: #DDDDFF;
+}
+
+fieldset input:focus
+{
+    background-color: #AAAAFF;
+}
