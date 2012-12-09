@@ -1,7 +1,10 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+    function AddUser($nom, $prenom, $email, $login, $mdp, $type)
+    {
+        $SQL = "INSERT INTO users VALUES ('','$nom','$prenom','$email','$login','$mdp','$type')";
+        $res=mysql_query($SQL);
+        
+        return $res;
+    }
 ?>

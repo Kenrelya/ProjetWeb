@@ -485,6 +485,38 @@
                     
                     include("vues/enseignant/notes2.php");
                     break;
+                    
+                case "EnregistrementView":
+                    if (!isset($_POST['nom']) || !isset($_POST['prenom']) || !isset($_POST['email']) || !isset($_POST['login']) || !isset($_POST['mdp']) || !isset($_POST['type'])) 
+                    {
+                        $message = "Il maque quelque chose..";
+                        include("vues/utilisateur/enregistrement.php");
+                    } 
+                    else
+                    {
+                        $nom = mysql_real_escape_string($_POST['nom']);
+                        $prenom = mysql_real_escape_string($_POST['prenom']);
+                        $email = mysql_real_escape_string($_POST['email']);
+                        $login = mysql_real_escape_string($_POST['login']);
+                        $mdp = mysql_real_escape_string($_POST['mdp']);
+                        $type = mysql_real_escape_string($_POST['type']);
+                        if(AddUser($nom, $prenom, $email, $login, $mdp, $type))
+                        {
+                            $message = "Vous avez bien été enregistré";
+                        }
+                        else
+                        {
+                            $message = "Erreur d'insertion";
+                        }
+                        
+                        include("vues/utilisateur/accueil.php");
+                    }
+                   break;
+               
+               case "Enregistrement":
+                   include("vues/utilisateur/enregistrment.php");
+                   break;
+                  
             
             default :
                 include("vues/utilisateur/accueil.php");
